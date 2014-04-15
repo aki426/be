@@ -1,8 +1,5 @@
 ---
-layout: default
-title: LibMigration
+title: be!‚ÌŽg‚¢•û
 ---
 
-## A minimum database migration library and framework for MySQL.
-
-LibMigration is a minimum database migration library and framework for MySQL.
+‚Ù‚°‚Ù‚°
