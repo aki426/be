@@ -35,7 +35,7 @@
 
 <p>「マインクラフト風、レゴ風、積み木風、ドット絵風、<a href="http://ja.wikipedia.org/wiki/%E3%83%9C%E3%82%AF%E3%82%BB%E3%83%AB">ボクセル風</a>」……呼び方は何でもいいですが、画像のようなフィギュアが「誰でも簡単」に作れて、「3Dプリントで出力」できます。ぜひダウンロードして遊んでみてね！</p>
 
-<p>（※ダウンロードリンクは下のほうにあります。右上のアイコンは意味無いです。わかりにくくてごめんね！）</p>
+<p>（※ダウンロードリンクは下のほうにあります。右上のアイコンは意味無いです。わかりにくくてすいません。）</p>
 
 <h2>
 <a name="%E7%B0%A1%E5%8D%98%E3%81%AA%E8%AA%AC%E6%98%8E" class="anchor" href="#%E7%B0%A1%E5%8D%98%E3%81%AA%E8%AA%AC%E6%98%8E"><span class="octicon octicon-link"></span></a>簡単な説明</h2>
@@ -57,7 +57,6 @@
 
 <ul>
 <li>範囲選択、選択範囲の移動、カット、コピー、ペースト</li>
-<li>かしこいメモリ管理</li>
 </ul><p>be! で<strong>"永久に"</strong>できないこと</p>
 
 <ul>
@@ -87,31 +86,35 @@
 <li>Windows版
 
 <ul>
-<li><a href="http://aki426.github.io/be/downloads/be!_Win64BetaVer0.97.zip">Block Editor be! Windows64bit版ダウンロード(Beta Ver0.97)</a></li>
-<li><a href="http://aki426.github.io/be/downloads/be!_WinBetaVer0.97.zip">Block Editor be! Windows32bit版ダウンロード(Beta Ver0.97)</a></li>
+<li><a href="http://aki426.github.io/be/downloads/be!_Win64BetaVer0.98.zip">Block Editor be! Windows64bit版ダウンロード(Beta Ver0.98)</a></li>
+<li><a href="http://aki426.github.io/be/downloads/be!_WinBetaVer0.98.zip">Block Editor be! Windows32bit版ダウンロード(Beta Ver0.98)</a></li>
 </ul>
 </li>
 <li>Mac版
 
 <ul>
-<li><a href="http://aki426.github.io/be/downloads/be!_MacBetaVer0.97.zip">Block Editor be! Mac版ダウンロード(Beta Ver0.97)</a></li>
+<li><a href="http://aki426.github.io/be/downloads/be!_MacBetaVer0.98.zip">Block Editor be! Mac版ダウンロード(Beta Ver0.98)</a></li>
 </ul>
 </li>
 <li>Linux版
 
 <ul>
-<li><a href="http://aki426.github.io/be/downloads/be!_LinuxBetaVer0.97.zip">Block Editor be! Linux版ダウンロード(Beta Ver0.97)</a></li>
+<li><a href="http://aki426.github.io/be/downloads/be!_LinuxBetaVer0.98.zip">Block Editor be! Linux版ダウンロード(Beta Ver0.98)</a></li>
 </ul>
 </li>
 </ul><h3>
-<a name="ver097%E3%81%AE%E5%A4%89%E6%9B%B4%E7%82%B9" class="anchor" href="#ver097%E3%81%AE%E5%A4%89%E6%9B%B4%E7%82%B9"><span class="octicon octicon-link"></span></a>Ver0.97の変更点</h3>
+<a name="ver098%E3%81%AE%E5%A4%89%E6%9B%B4%E7%82%B9" class="anchor" href="#ver098%E3%81%AE%E5%A4%89%E6%9B%B4%E7%82%B9"><span class="octicon octicon-link"></span></a>Ver0.98の変更点</h3>
 
 <ul>
-<li>Z軸平面のスライスを切った際に、半透明ブロックが表示されなかったバグを修正しました。</li>
+<li>BlockウィンドウとSliceウィンドウをまとめてControlウィンドウにしました。できることは変わってません。</li>
+<li>スライスを切った際の表示を「半透明で全てのブロックを表示」「半透明で隣接するスライス平面のブロックだけ表示」「選択スライスのみ表示」から切り替えられるようにしました。それぞれControlウィンドウの「ALL slices」「ASIDE slices」「only the slice」のラジオボタンのチェックで指定できます。</li>
+<li>メモリ管理方法を見直しました。技術的な話をすると、要はオブジェクトプールです。</li>
+<li>FileウィンドウにNewボタンを実装しました。どちらかというと「全消し」ボタンといった風情ですが。Redo（Ctrl+Z）で戻ることもできます。</li>
+<li>サンプルデータを追加しました。「TokonatsuVinnet.bed」です。16x16x16のサイズのモデルに合わせて作ってあります。ひらいてみてね。</li>
 </ul><h2>
 <a name="%E4%BD%BF%E3%81%84%E6%96%B9" class="anchor" href="#%E4%BD%BF%E3%81%84%E6%96%B9"><span class="octicon octicon-link"></span></a>使い方</h2>
 
-<p><a href="https://github.com/aki426/be/wiki/%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B">とりあえずの使い方はこちら</a>を見てね。be! の使い方は、<a href="https://github.com/aki426/be/wiki">GitHubのWiki</a>で更新していきます。今後充実させていきますので、ちょっとまっててね！</p>
+<p><a href="https://github.com/aki426/be/wiki/%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B">とりあえずの使い方はこちら</a>を見てね。be! の使い方は、<a href="https://github.com/aki426/be/wiki">GitHubのWiki</a>で更新していきます。今後充実させていきますので、ちょっとまっててね。</p>
 
 <h2>
 <a name="%E5%B1%A5%E6%AD%B4" class="anchor" href="#%E5%B1%A5%E6%AD%B4"><span class="octicon octicon-link"></span></a>履歴</h2>
