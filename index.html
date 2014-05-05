@@ -40,12 +40,13 @@
 <h2>
 <a name="%E7%B0%A1%E5%8D%98%E3%81%AA%E8%AA%AC%E6%98%8E" class="anchor" href="#%E7%B0%A1%E5%8D%98%E3%81%AA%E8%AA%AC%E6%98%8E"><span class="octicon octicon-link"></span></a>簡単な説明</h2>
 
-<p>be! で<strong>"今できること"</strong></p>
+<p>be! で<strong>"できること"</strong></p>
 
 <ul>
 <li>ドット絵風の3Dモデリング</li>
 <li>EDGE風のカラーパレット、アンドゥ、リドゥ</li>
 <li>マインクラフト風に設置できるADDモード、DELモード</li>
+<li>範囲選択、選択範囲の消去、塗りつぶし、カット、コピー、ペースト</li>
 <li>EDGEなどで作ったドット絵（png形式）を読み込んで3D化する</li>
 <li>bepファイルに記述してpng画像の複数枚同時読み込み</li>
 <li>VRML(.wrl)ファイルに書き出して、<a href="http://make.dmm.com/">DMM.comの3Dプリントサービス</a>で3Dプリントする</li>
@@ -53,11 +54,7 @@
 
 <p>※作者の作ったサンプル出力例です。このくらいの大きさなら2000～3000円くらいで出せます。</p>
 
-<p>be! で<strong>"まだ"</strong>できないこと</p>
-
-<ul>
-<li>範囲選択、選択範囲の移動、カット、コピー、ペースト</li>
-</ul><p>be! で<strong>"永久に"</strong>できないこと</p>
+<p>be! で<strong>"永久に"</strong>できないこと</p>
 
 <ul>
 <li>お金を払ってライセンスを購入
@@ -86,32 +83,41 @@
 <li>Windows版
 
 <ul>
-<li><a href="http://aki426.github.io/be/downloads/be!_Win64BetaVer0.98.zip">Block Editor be! Windows64bit版ダウンロード(Beta Ver0.98)</a></li>
-<li><a href="http://aki426.github.io/be/downloads/be!_WinBetaVer0.98.zip">Block Editor be! Windows32bit版ダウンロード(Beta Ver0.98)</a></li>
+<li><a href="http://aki426.github.io/be/downloads/be!_Win64BetaVer0.99.zip">Block Editor be! Windows64bit版ダウンロード(Beta Ver0.99)</a></li>
+<li><a href="http://aki426.github.io/be/downloads/be!_WinBetaVer0.99.zip">Block Editor be! Windows32bit版ダウンロード(Beta Ver0.99)</a></li>
 </ul>
 </li>
 <li>Mac版
 
 <ul>
-<li><a href="http://aki426.github.io/be/downloads/be!_MacBetaVer0.98.zip">Block Editor be! Mac版ダウンロード(Beta Ver0.98)</a></li>
+<li><a href="http://aki426.github.io/be/downloads/be!_MacBetaVer0.99.zip">Block Editor be! Mac版ダウンロード(Beta Ver0.99)</a></li>
 </ul>
 </li>
 <li>Linux版
 
 <ul>
-<li><a href="http://aki426.github.io/be/downloads/be!_LinuxBetaVer0.98.zip">Block Editor be! Linux版ダウンロード(Beta Ver0.98)</a></li>
+<li><a href="http://aki426.github.io/be/downloads/be!_LinuxBetaVer0.99.zip">Block Editor be! Linux版ダウンロード(Beta Ver0.99)</a></li>
 </ul>
 </li>
 </ul><h3>
-<a name="ver098%E3%81%AE%E5%A4%89%E6%9B%B4%E7%82%B9" class="anchor" href="#ver098%E3%81%AE%E5%A4%89%E6%9B%B4%E7%82%B9"><span class="octicon octicon-link"></span></a>Ver0.98の変更点</h3>
+<a name="ver099%E3%81%AE%E5%A4%89%E6%9B%B4%E7%82%B9" class="anchor" href="#ver099%E3%81%AE%E5%A4%89%E6%9B%B4%E7%82%B9"><span class="octicon octicon-link"></span></a>Ver0.99の変更点</h3>
 
 <ul>
-<li>BlockウィンドウとSliceウィンドウをまとめてControlウィンドウにしました。できることは変わってません。</li>
-<li>スライスを切った際の表示を「半透明で全てのブロックを表示」「半透明で隣接するスライス平面のブロックだけ表示」「選択スライスのみ表示」から切り替えられるようにしました。それぞれControlウィンドウの「ALL slices」「ASIDE slices」「only the slice」のラジオボタンのチェックで指定できます。</li>
-<li>メモリ管理方法を見直しました。技術的な話をすると、要はオブジェクトプールです。</li>
-<li>FileウィンドウにNewボタンを実装しました。どちらかというと「全消し」ボタンといった風情ですが。Redo（Ctrl+Z）で戻ることもできます。</li>
-<li>サンプルデータを追加しました。「TokonatsuVinnet.bed」です。16x16x16のサイズのモデルに合わせて作ってあります。ひらいてみてね。</li>
-<li>DrawCall数を右上に表示していましたが、あまり意味が無くなってしまったので削除しました。</li>
+<li>カラーパレットで選択中の色を強調表示するようにしました。暗い色は白枠、明るい色は黒枠が表示されます。</li>
+<li>左クリックの発火条件を少し変えました。ボタンを押して、放した瞬間問答無用で発火します。</li>
+<li>選択範囲機能を実装しました。Shiftを押した状態で左ボタンクリックすると、範囲選択モードになります。
+
+<ul>
+<li>範囲選択モード中、左ボタンクリックをするとその範囲をメモリにコピーします。</li>
+<li>範囲選択モード中、Deleteキー、またはBackspaceキーを押すと一括消去します。</li>
+<li>範囲選択モード中、Gキーを押すと選択色で塗りつぶします。</li>
+<li>範囲選択モード中、Ctrl+Xを押すとカット（一括消去＆メモリにコピー）します。</li>
+<li>範囲選択モード中、Ctrl+Cを押すとコピーします。</li>
+<li>範囲選択モード中、Escキーを押すと何もせず範囲選択モードを抜けます。</li>
+</ul>
+</li>
+<li>ペースト機能を実装しました。Ctrlを押すと、直前にメモリにコピーした範囲が表示され、その状態でCtrl+Vを押すとペーストされます。</li>
+<li>Open、IMPORTダイアログで出てくる「Select」ボタンの表示を「OK」ボタンに変更しました。普通です。</li>
 </ul><h2>
 <a name="%E4%BD%BF%E3%81%84%E6%96%B9" class="anchor" href="#%E4%BD%BF%E3%81%84%E6%96%B9"><span class="octicon octicon-link"></span></a>使い方</h2>
 
